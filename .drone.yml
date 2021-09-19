@@ -2,6 +2,10 @@ kind: pipeline
 type: docker
 name: foo
 
+clone:
+  git:
+    image: plugins/git
+
 steps:
 - name: foo
   image: alpine
