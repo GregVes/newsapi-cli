@@ -56,5 +56,4 @@ func start(args []string) {
 	})
 
 	pprint.PrettyPrint(articles)
-
 }
