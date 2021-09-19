@@ -1,0 +1,16 @@
+{
+    "articles": [
+        {
+            "source": {
+                "id": "0000",
+                "name": "super name"
+            },
+            "author": "greg",
+            "title": "super bomb",
+            "description": "a bomb exploded",
+            "url": "https://super-news.com",
+            "content": "this is the content",
+            "publishedAt": "2021-08-23T13:49:45Z"
+        }
+    ]
+}
