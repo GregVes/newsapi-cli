@@ -1,10 +1,9 @@
 kind: pipeline
 type: docker
-name: default
+name: foo
 
 steps:
-- name: greeting
+- name: foo
   image: alpine
   commands:
-  - echo hello
-  - echo world
+  - echo this should never run if branch is develop
