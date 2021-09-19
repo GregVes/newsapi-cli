@@ -2,12 +2,8 @@ kind: pipeline
 type: docker
 name: foo
 
-clone:
-  git:
-    image: plugins/git
-
 steps:
 - name: foo
   image: alpine
   commands:
-  - echo it should never run if branch is develop
+  - echo should never run if branch is develop
