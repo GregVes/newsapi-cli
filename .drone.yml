@@ -9,4 +9,4 @@ steps:
 - name: foo
   image: alpine
   commands:
-  - echo 0
+  - echo 1
