@@ -1,6 +1,6 @@
 kind: pipeline
-#type: docker
-name: test-0
+type: docker
+name: test-1
 platform:
   os: linux
   arch: amd64
