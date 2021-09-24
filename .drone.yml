@@ -1,25 +1,14 @@
 kind: pipeline
 type: docker
-name: test-3
+name: push
 platform:
   os: linux
   arch: amd64
 
-steps:
-- name: bar
-  image: alpine
+- name: unit test
+  image: golang
   commands:
-  - echo another try
+  - gotest ./... -v
 
 trigger:
   event: [ push ]
-
-#steps:
-#  [
-#    {
-#      "id":67,"step_id":36,"number":1,"name":"clone","status":"skipped","exit_code":0,"started":1632468887,"stopped":1632468887,"version":2
-#    },
-#    {
-#      "id":68,"step_id":36,"number":2,"name":"foo","status":"skipped","exit_code":0,"started":1632468887,"stopped":1632468887,"version":2
-#    }
-#  ]
