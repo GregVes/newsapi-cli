@@ -8,7 +8,7 @@ platform:
 - name: unit test
   image: golang
   commands:
-  - gotest ./... -v
+  - go test
 
 trigger:
   event: [ push ]
