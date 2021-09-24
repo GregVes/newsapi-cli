@@ -26,7 +26,7 @@ steps:
 - name: test
   image: golang
   commands:
-  - go version
+  - gotest ./... -v
 
 trigger:
   event: [ push ]
