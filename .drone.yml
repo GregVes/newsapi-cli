@@ -9,9 +9,8 @@ steps:
 - name: unit test app
   image: golang
   commands:
-  - ls
-#  - go get ./...
-#  - gotest ./... -v
+  - curl https://gotest-release.s3.amazonaws.com/gotest_linux > gotest && chmod +x gotest
+  - gotest ./... -v
 
 trigger:
   event: [ push ]
