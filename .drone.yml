@@ -1,0 +1,17 @@
+kind: pipeline
+type: docker
+name: newsapi-cli pipeline
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: unit test app
+  image: golang
+  commands:
+  - curl https://gotest-release.s3.amazonaws.com/gotest_linux > gotest && chmod +x gotest
+  - ./gotest ./... -v
+
+trigger:
+  event: [ push ]

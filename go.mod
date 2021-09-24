@@ -7,12 +7,12 @@ require github.com/akamensky/argparse v1.3.1
 require (
 	github.com/atomicgo/cursor v0.0.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/fatih/color v1.12.0 // indirect
+	github.com/fatih/color v1.13.0 // indirect
 	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/google/subcommands v1.0.1 // indirect
 	github.com/google/wire v0.5.0 // indirect
 	github.com/gookit/color v1.4.2 // indirect
-	github.com/mattn/go-colorable v0.1.8 // indirect
+	github.com/mattn/go-colorable v0.1.9 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
