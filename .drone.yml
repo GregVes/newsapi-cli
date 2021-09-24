@@ -1,6 +1,6 @@
 kind: pipeline
-type: docker
-name: foo
+#type: docker
+name: test-0
 platform:
   os: linux
   arch: amd64
@@ -10,3 +10,16 @@ steps:
   image: alpine
   commands:
   - echo 2
+
+trigger:
+  event: [ push ]
+
+#steps:
+#  [
+#    {
+#      "id":67,"step_id":36,"number":1,"name":"clone","status":"skipped","exit_code":0,"started":1632468887,"stopped":1632468887,"version":2
+#    },
+#    {
+#      "id":68,"step_id":36,"number":2,"name":"foo","status":"skipped","exit_code":0,"started":1632468887,"stopped":1632468887,"version":2
+#    }
+#  ]
