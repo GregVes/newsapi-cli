@@ -1,5 +1,6 @@
 kind: pipeline
-name: Default
+type: docker
+name: newsapi-cli pipeline
 
 platform:
   os: linux
@@ -7,12 +8,10 @@ platform:
 
 steps:
 - name: unit test app
-  image: golang
+  image: gcr.io/library/golang
   commands:
   - curl https://gotest-release.s3.amazonaws.com/gotest_linux > gotest && chmod +x gotest
-  - GOTEST_PALETTE="magenta,white" ./gotest ./... -v
+  - ./gotest ./... -v
 
 trigger:
   event: [ push ]
-
-
