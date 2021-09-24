@@ -9,8 +9,9 @@ steps:
 - name: unit test app
   image: golang
   commands:
-  - go get ./...
-  - gotest ./... -v
+  - ls
+#  - go get ./...
+#  - gotest ./... -v
 
 trigger:
   event: [ push ]
