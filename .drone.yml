@@ -1,31 +1,15 @@
-#kind: pipeline
-#type: docker
-#name: push
-#platform:
-#  os: linux
-#  arch: amd64
-#
-#- name: unit test
-#  image: golang
-#  commands:
-#  - gotest ./... -v
-#
-#trigger:
-#  event: [ push ]
-
-
-
 kind: pipeline
-name: default
+name: Default
 
 platform:
   os: linux
   arch: amd64
 
 steps:
-- name: test
+- name: unit test app
   image: golang
   commands:
+  - go get ./...
   - gotest ./... -v
 
 trigger:
